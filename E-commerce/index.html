@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <title>E-commerce</title>
+</head>
+<body>
+  <!----Navbar-->
+    <nav class="navbar">
+      <h1 class="logo">Blacky</h1>
+
+      <!---menu-->
+      <ul class="menu">
+        <li><a onclick="filterProducts('all')">Home</a></li>
+        <li><a onclick="filterProducts('men')">Men</a></li>
+        <li><a onclick="filterProducts('women')">Women</a></li>
+        <li><a onclick="filterProducts('beauty')">Beauty</a></li>
+        <li><a onclick="filterProducts('genz')">Genz</a></li>
+      </ul>
+
+      <div class="search">
+        <span class="icon">🔍</span>
+        <input type="text" placeholder="Search..." class="search-input"/>
+      </div>
+
+      <div class="profile">
+        <span class="user"><i class="fa-regular fa-user"></i>Profile</span>
+        <span class='wish'><i class="fa-regular fa-heart"></i>Wishlist</span>
+        <span class="cart"><i class="fa-solid fa-cart-shopping"></i>Cart</span>
+      </div>
+    </nav>
+
+    <!----product Container-->
+    <div id="productContainer" class="container">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
